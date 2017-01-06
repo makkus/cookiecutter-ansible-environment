@@ -7,5 +7,6 @@
     "freckles_stow_playbook": "~/.cache/freckles/play/freckles_stow_playbook.yml",
     "freckles_ansible_freckles_role_url": "https://github.com/makkus/ansible-freckles",
     "freckles_ansible_stow_role_url": "https://github.com/makkus/ansible-stow",
-    "freckles_ask_sudo": "--ask-become-pass"
+    "freckles_ask_sudo": "--ask-become-pass",
+    "freckles_develop_roles_path":""
 }
