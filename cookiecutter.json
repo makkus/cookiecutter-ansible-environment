@@ -4,5 +4,6 @@
     "freckles_role_name": "ansible-freckles",
     "freckles_playbook_dir": "~/.cache/freckles/play",
     "freckles_install_playbook": "~/.cache/freckles/play/freckles_install_playbook.yml",
-    "freckles_stow_playbook": "~/.cache/freckles/play/freckles_stow_playbook.yml"
+    "freckles_stow_playbook": "~/.cache/freckles/play/freckles_stow_playbook.yml",
+    "freckles_ansible_role": "https://github.com/makkus/ansible-freckles"
 }

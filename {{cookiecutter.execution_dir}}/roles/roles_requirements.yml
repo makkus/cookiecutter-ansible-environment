@@ -1,2 +1,2 @@
-- src: https://github.com/makkus/ansible-freckles
+- src: {{cookiecutter.freckles_ansible_role}}
   name: ansible-freckles
