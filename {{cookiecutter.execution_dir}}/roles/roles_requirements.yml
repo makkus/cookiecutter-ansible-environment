@@ -1,2 +1,4 @@
-- src: {{cookiecutter.freckles_ansible_role}}
+- src: {{cookiecutter.freckles_ansible_freckles_role_url}}
   name: ansible-freckles
+- src: {{cookiecutter.freckles_stow_role_url}}
+  name: ansible-stow
