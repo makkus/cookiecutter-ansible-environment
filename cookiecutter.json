@@ -5,5 +5,6 @@
     "freckles_playbook_dir": "~/.cache/freckles/play",
     "freckles_playbook": "~/.cache/freckles/play/freckles_playbook.yml",
     "freckles_ask_sudo": "--ask-become-pass",
-    "freckles_develop_roles_path":""
+    "freckles_develop_roles_path": "",
+    "freckles_ansible_roles": {}
 }
