@@ -34,9 +34,10 @@ class CallbackModule(CallbackBase):
         super(CallbackModule, self).__init__()
 
     def print_to_stdoutout(self, status, msg):
-        print("Status: {}".format(status))
-        pprint.pprint(json.dumps(msg))
-        print()
+        if isinstance(msg, dict):
+            print("Status: {}".format(status))
+            pprint.pprint(json.dumps(msg))
+            print()
 
     def runner_on_failed(self, host, res, ignore_errors=False):
         self._dump_results('FAILED', res)
