@@ -42,7 +42,7 @@ class CallbackModule(object):
     Ansible callback plugin for human-readable result logging
     """
     CALLBACK_VERSION = 2.0
-    CALLBACK_TYPE = 'stdout'
+    CALLBACK_TYPE = 'notification'
     CALLBACK_NAME = 'human_log'
     CALLBACK_NEEDS_WHITELIST = False
 
