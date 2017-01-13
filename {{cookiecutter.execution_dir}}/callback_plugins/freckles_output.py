@@ -73,7 +73,7 @@ class CallbackModule(CallbackBase):
         # msg = to_bytes(self.MSG_FORMAT % dict(data=data))
         # msg = to_bytes(data)
         msg = json.dumps(data)
-        print(msg)
+        print("FRECKLES: {}".format(msg))
         # with open(path, "ab") as fd:
             # fd.write(msg)
 
