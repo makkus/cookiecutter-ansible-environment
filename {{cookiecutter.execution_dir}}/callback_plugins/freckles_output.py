@@ -54,7 +54,7 @@ class CallbackModule(object):
             for field in FIELDS:
                 no_log = data.get('_ansible_no_log')
                 output = self._convert_output(data[field])
-                print(json.dumps(output))
+                print("FRECKLES: {}".format(json.dumps(output)))
                 # pprint.pprint(output)
 
             # for field in ALL_FIELDS:
