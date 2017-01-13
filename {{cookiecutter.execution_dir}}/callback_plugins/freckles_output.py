@@ -70,8 +70,9 @@ class CallbackModule(CallbackBase):
         now = time.strftime(self.TIME_FORMAT, time.localtime())
         data["now"] = now
         data["category"] = category
-        msg = to_bytes(self.MSG_FORMAT % dict(data=data))
+        # msg = to_bytes(self.MSG_FORMAT % dict(data=data))
         # msg = to_bytes(data)
+        msg = json.dumps(data)
         print(msg)
         # with open(path, "ab") as fd:
             # fd.write(msg)
