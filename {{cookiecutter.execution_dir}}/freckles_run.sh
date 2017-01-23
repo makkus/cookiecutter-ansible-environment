@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then source "$HOME/.nix-profile/etc/profile.d/nix.sh"; fi
+#if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then source "$HOME/.nix-profile/etc/profile.d/nix.sh"; fi
+source "$HOME/.nix-profile/etc/profile.d/nix.sh"
 
 cd {{cookiecutter.freckles_playbook_dir}}
 
