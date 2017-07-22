@@ -1,8 +1,14 @@
 {
     "env_dir": ".",
-    "nsbl_script_configs": "",
-    "nsbl_roles": {},
-    "nsbl_callback_plugins": "",
-    "nsbl_callback_plugin_name": "",
+    "inventory": "../inventory",
+    "playbook_dir": "plays",
+    "library_path": "",
+    "action_plugins_path": "",
+    "extra_script_commands": "",
+    "ansible_playbook_args": "",
+    "ask_sudo": "",
+    "playbook": "all_plays.yml",
+    "callback_plugins": "",
+    "callback_plugin_name": "",
     "_extensions": ["nsbl.ansible_extensions.utils"]
 }
