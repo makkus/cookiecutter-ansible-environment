@@ -9,6 +9,7 @@
     "ask_sudo": "",
     "playbook": "all_plays.yml",
     "callback_plugins": "",
+    "callback_whitelist": "",
     "callback_plugin_name": "",
     "_extensions": ["nsbl.ansible_extensions.utils"]
 }
