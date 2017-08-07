@@ -2,8 +2,7 @@
 set -e
 #TODO: Support python virtual environments for now global
 
-
-export PATH="$HOME/.freckles/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 COLOR_END='\e[0m'
 COLOR_RED='\e[0;31m'
@@ -44,8 +43,6 @@ if [ -d "$EXTERNAL_ROLE_DIR" ]; then
 	  msg_exit "Path error could not change dir to $EXTERNAL_ROLE_DIR"
 	fi
 fi
-
-
 
 # Install roles
 ansible-galaxy install -r "$ROLES_REQUIREMNTS_FILE" --force --no-deps -p "$EXTERNAL_ROLE_DIR"
