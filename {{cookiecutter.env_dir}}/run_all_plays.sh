@@ -8,6 +8,10 @@ if [ -d "$HOME/.local/bin" ]; then
     export PATH="$HOME/.local/bin:$PATH"
 fi
 
+if [ -d "$HOME/.local/inaugurate/bin" ]; then
+    export PATH="$HOME/.local/inaugurate/bin:$PATH"
+fi
+
 cd {{cookiecutter.playbook_dir}}
 
 {{cookiecutter.extra_script_commands}}
