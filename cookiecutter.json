@@ -11,5 +11,7 @@
     "callback_plugins": "",
     "callback_whitelist": "",
     "callback_plugin_name": "",
-    "_extensions": ["nsbl.ansible_extensions.utils"]
+    "_extensions": [
+        "nsbl.ansible_extensions.utils"
+    ]
 }
