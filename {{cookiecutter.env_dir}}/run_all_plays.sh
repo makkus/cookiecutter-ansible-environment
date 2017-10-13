@@ -4,6 +4,9 @@ if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then source "$HOME/.nix-pro
 
 # if [ -e "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh" ]; then source "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh"; fi
 
+if [ -d "$HOME/.local/inaugurate/conda/envs/inaugurate/bin" ]; then
+    export PATH="$HOME/.local/inaugurate/conda/envs/inaugurate/bin:$PATH"
+fi
 if [ -d "$HOME/.local/inaugurate/virtualenvs/inaugurate/bin" ]; then
     export PATH="$HOME/.local/inaugurate/virtualenvs/inaugurate/bin:$PATH"
 fi
