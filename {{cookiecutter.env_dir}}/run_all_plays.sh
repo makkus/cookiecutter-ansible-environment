@@ -36,6 +36,13 @@ if [ -d "$HOME/.local/bin" ]; then
     export PATH="$HOME/.local/bin:$PATH"
 fi
 
+# additional bin paths
+{% for path in  cookiecutter.extra_paths.split(':') %}
+if [ -d "{{ path }}" ]; then
+    export PATH="{{ path }}:$PATH"
+fi
+{% endfor %}
+
 cd {{cookiecutter.playbook_dir}}
 
 {{cookiecutter.extra_script_commands}}
