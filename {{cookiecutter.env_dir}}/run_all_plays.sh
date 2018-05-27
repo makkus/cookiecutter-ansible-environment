@@ -1,20 +1,6 @@
 #!/usr/bin/env bash
 
-# =========================
-# legacy, will be removed at some stage
-if [ -d "$HOME/.local/inaugurate/conda/envs/inaugurate/bin" ]; then
-    export PATH="$HOME/.local/inaugurate/conda/envs/inaugurate/bin:$PATH"
-fi
-if [ -d "$HOME/.local/inaugurate/virtualenvs/inaugurate/bin" ]; then
-    export PATH="$HOME/.local/inaugurate/virtualenvs/inaugurate/bin:$PATH"
-fi
-if [ -d "$HOME/.local/inaugurate/conda/bin" ]; then
-    export PATH="$HOME/.local/inaugurate/conda/bin:$PATH"
-fi
-if [ -d "$HOME/.local/inaugurate/bin" ]; then
-    export PATH="$HOME/.local/inaugurate/bin:$PATH"
-fi
-# =========================
+THIS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then source "$HOME/.nix-profile/etc/profile.d/nix.sh"; fi
 
@@ -43,7 +29,7 @@ if [ -d "{{ path }}" ]; then
 fi
 {% endfor %}
 
-cd {{cookiecutter.playbook_dir}}
+cd "${THIS_DIR}/plays"
 
 {{cookiecutter.extra_script_commands}}
 
